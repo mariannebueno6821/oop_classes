@@ -3,22 +3,22 @@ import 'flower.dart';
 import 'plant.dart';
 
 void main() {
-  // Phone example
-  var myPhone = Phone(brand: 'Samsung', model: 'Galaxy S23');
+  // Test the Phone class
+  var myPhone = Phone(brand: "Samsung", model: "Galaxy S23");
   myPhone.displayInfo();
 
-  // Flower example
-  var myFlower = Flower(
-    name: 'Rose',
-    color: 'Red',
-    height: 45,
-    isFragrant: true,
-  );
-  myFlower.describe();
-  myFlower.bloom();
+  print(""); // just for spacing
 
-  // Plant example
-  var myPlant = Plant('Sunflower', 'Herbaceous', 150, 'Yellow');
-  myPlant.displayInfo();
-  myPlant.grow(10);
+  // Test the Flower class
+  var rose = Flower(name: "Rose", color: "Red", height: 45.0, isFragrant: true);
+  rose.describe();
+  rose.bloom();
+
+  print(""); // spacing
+
+  // Test the Plant class
+  var sunflower = Plant("Sunflower", "Flowering Plant", 150.0, "Yellow");
+  sunflower.displayInfo();
+  sunflower.grow(20.0);
+  sunflower.displayInfo();
 }

@@ -1,13 +1,9 @@
-// flower.dart
-
 class Flower {
-  // Properties
   final String name;
   final String color;
   final double height; // in centimeters
   final bool isFragrant;
 
-  // Constructor
   Flower({
     required this.name,
     required this.color,
@@ -15,7 +11,6 @@ class Flower {
     this.isFragrant = false,
   });
 
-  // Method to display flower details
   void describe() {
     print("🌸 $name");
     print("Color: $color");
@@ -23,11 +18,15 @@ class Flower {
     print("Fragrant: ${isFragrant ? 'Yes' : 'No'}");
   }
 
-  // Method to check if the flower is tall
   bool isTall() => height > 100;
 
-  // Method to simulate blooming
   void bloom() {
     print("$name is blooming beautifully! 🌼");
   }
+}
+
+void main() {
+  var rose = Flower(name: "Rose", color: "Red", height: 45.0, isFragrant: true);
+  rose.describe();
+  rose.bloom();
 }
